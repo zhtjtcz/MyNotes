@@ -60,7 +60,7 @@ repos:
 
 编写`.flake8`：
 
-```flake
+```shell
 [flake8]
 ignore = E501, F401, E731, W503, E722, E712, E203, F841, E265, E266, E262, E402, E741, W605
 ```

@@ -2,6 +2,7 @@ title: Marvolo's Note
 description: A starter template for a Jeykll site using the Just the Docs theme!
 theme: just-the-docs
 color_scheme: dark
+timezone: Asia/Shanghai
 
 url: https://just-the-docs.github.io
 
