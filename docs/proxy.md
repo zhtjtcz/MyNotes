@@ -4,7 +4,7 @@ layout: default
 nav_order: 2
 ---
 
-# 代理
+## 代理
 
 基于 Clash
 
@@ -25,7 +25,7 @@ export https_proxy=http://127.0.0.1:7890
 unset  http_proxy && unset https_proxy
 ```
 
-# 镜像
+## 镜像
 
 火山外网 && 内网镜像源与清华源
 
@@ -35,7 +35,7 @@ pip install torch -i https://mirrors.volces.com/pypi/simple/
 pip install numpy -i https://pypi.tuna.tsinghua.edu.cn/simple
 ```
 
-# Google Drive 下载
+## Google Drive 下载
 
 单文件：
 
@@ -58,7 +58,7 @@ wget --load-cookies /tmp/cookies.txt "https://drive.google.com/uc?export=downloa
 gdown https://drive.google.com/drive/folders/xxx -O ./ --folder
 ```
 
-# Hugging Face 下载
+## Hugging Face 下载
 
 准备工作：
 
