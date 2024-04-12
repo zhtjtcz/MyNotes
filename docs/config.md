@@ -1,10 +1,10 @@
 ---
 title: 配置文件
 layout: default
-nav_order: 4
+nav_order: 5
 ---
 
-# Vim
+## Vim
 
 ```vim
 "设置编码
@@ -60,4 +60,57 @@ filetype plugin indent on
 
 "让vimrc配置变更立即生效
 autocmd BufWritePost $MYVIMRC source $MYVIMRC
+```
+
+## bashrc
+
+```vim
+alias ep='export PYTHONPATH=$PWD'
+alias G0='CUDA_VISIBLE_DEVICES=0'
+alias G1='CUDA_VISIBLE_DEVICES=1'
+alias G2='CUDA_VISIBLE_DEVICES=2'
+alias G3='CUDA_VISIBLE_DEVICES=3'
+alias G4='CUDA_VISIBLE_DEVICES=4'
+alias G5='CUDA_VISIBLE_DEVICES=5'
+alias G6='CUDA_VISIBLE_DEVICES=6'
+alias G7='CUDA_VISIBLE_DEVICES=7'
+```
+
+## editorconfig
+
+```
+# 设为true时，才会停止查找.editorconfig文件
+root = true
+
+# 对于 py 文件  始终在文件末尾插入一个新行
+[*.py]
+end_of_line = lf
+insert_final_newline = true
+
+
+# 设置 py 文件的缩进
+[*.py]
+indent_style = space
+indent_size = 4
+```
+
+## VSCode Debug
+
+```json
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Train Debug",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "train.py",
+            "console": "integratedTerminal",
+            "args": [
+                "projects/a.yaml",
+            ],
+            "env": {"CUDA_VISIBLE_DEVICES": "2"}
+        },
+    ]
+}
 ```
