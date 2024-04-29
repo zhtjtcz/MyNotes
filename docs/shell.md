@@ -11,6 +11,7 @@ nav_order: 3
 ```shell
 export PYTHONPATH=$PWD
 ls -l | grep "^-" | wc -l
+find . -maxdepth 1 -type d | wc -l
 du -h --max-depth=1 ./
 ```
 
