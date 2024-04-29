@@ -39,6 +39,14 @@ pip install numpy -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 单文件：
 
+基于 gdown 下载：
+
+```shell
+gdown https://drive.google.com/uc?id=xxx
+```
+
+基于脚本下载：
+
 ```shell
 # 打开要下载到的路径
 cd /nas/xxx
