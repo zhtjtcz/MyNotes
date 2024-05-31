@@ -29,7 +29,7 @@ ffmpeg -i 0.mp4 -i 1.mp4 -filter_complex "[0:v]pad=iw*2:ih*1[a];[a][1:v]overlay=
 
 创建`file_list.txt`，填入：
 
-```txt
+```shell
 file 'result0.mp4'
 file 'result1.mp4'
 file 'result2.mp4'
