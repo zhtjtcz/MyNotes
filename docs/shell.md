@@ -29,6 +29,7 @@ Python 调试
 pip install -i https://pypi.tuna.tsinghua.edu.cn/simple py-spy
 py-spy dump --nonblocking --pid xxx	# 查看进程当前调用栈
 py-spy top -p xxx 					# 实时查看进程各部分用时
+py-spy top -- python your_script.py # 实时查看当前脚本用时
 ```
 
 ## 脚本
