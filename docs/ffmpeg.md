@@ -4,6 +4,14 @@ layout: default
 nav_order: 8
 ---
 
+## 视频查看命令
+
+获取总帧数
+
+```shell
+ffprobe -v error -count_frames -select_streams v:0 -show_entries stream=nb_read_frames -of csv=p=0 a.mp4
+```
+
 ## 视频处理命令
 
 ### 分辨率调整
