@@ -35,6 +35,12 @@ pip install torch -i https://mirrors.volces.com/pypi/simple/
 pip install numpy -i https://pypi.tuna.tsinghua.edu.cn/simple
 ```
 
+特定 Nvidia 版本 torch 下载
+
+```shell
+pip install torch==2.2.1 -i https://download.pytorch.org/whl/cu118
+```
+
 ## Google Drive 下载
 
 单文件：
