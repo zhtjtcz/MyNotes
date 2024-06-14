@@ -6,6 +6,12 @@ nav_order: 8
 
 ## 视频查看命令
 
+查看视频详细信息
+
+```shell
+ffmpeg -i a.mp4
+```
+
 获取总帧数
 
 ```shell
