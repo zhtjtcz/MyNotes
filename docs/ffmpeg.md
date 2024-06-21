@@ -26,6 +26,14 @@ ffprobe -v error -count_frames -select_streams v:0 -show_entries stream=nb_read_
 ffmpeg -i input.mp4 -vf "scale=368:800" output.mp4
 ```
 
+### FPS 调整
+
+需要知道原分辨率，视频时长会自适应调整
+
+```shell
+ffmpeg -i input.mp4 -r 30 -filter:v "setpts=(8/30)*PTS" output.mp4
+```
+
 ### 视频拼接
 
 #### 相同分辨率
