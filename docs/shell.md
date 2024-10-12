@@ -14,6 +14,7 @@ ls -l | grep "^-" | wc -l
 find . -maxdepth 1 -type d | wc -l
 du -h --max-depth=1 ./
 ps -ef | grep python | grep -v .vscode | grep -v .pycharm | awk '!seen[$8]++' | grep python
+ps aux --sort=-%cpu
 ```
 
 Git 相关：
