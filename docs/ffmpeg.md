@@ -76,9 +76,27 @@ ffmpeg -f concat -safe 0 -i file_list.txt -c copy output.mp4
 ffmpeg -i input.mp4 -ss 00:00:00 -t 4 output.mp4
 ```
 
+### 视频抽帧
+
+4抽1：
+
+```shell
+ffmpeg -i input.mp4 -vf "select='not(mod(n\,4))',setpts=N/(8*TB)" -r 8 output.mp4
+```
+
 ### 转码
 
 ```shell
 ffmpeg -i input.mp4 -c:v libx264 -preset slow -crf 22 -c:a aac -b:a 128k output.mp4
 ffmpeg -i 1.mov -vcodec copy -acodec copy 1.mp4
+```
+
+## 视频与图片处理命令
+
+### 抽帧保存为图片
+
+获取首帧：
+
+```shell
+ffmpeg -i input.mp4 -vf "select=eq(n\,0)" -vsync vfr -q:v 2 first_frame.jpg
 ```
