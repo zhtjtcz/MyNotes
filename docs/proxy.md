@@ -10,16 +10,16 @@ nav_order: 2
 
 ```shell
 # 开启 Git 代理（clash版）
-git config --global http.proxy 127.0.0.1:7890
-git config --global https.proxy 127.0.0.1:7890
+git config --global http.proxy 127.0.0.1:10032
+git config --global https.proxy 127.0.0.1:10032
 
 # 关闭 Git 代理
 git config --global --unset http.proxy
 git config --global --unset https.proxy
 
 # 使用自己搭建的 clash 代理
-export http_proxy=http://127.0.0.1:7890
-export https_proxy=http://127.0.0.1:7890
+export http_proxy=http://127.0.0.1:10032
+export https_proxy=http://127.0.0.1:10032
 
 # 关闭 http 代理
 unset  http_proxy && unset https_proxy
