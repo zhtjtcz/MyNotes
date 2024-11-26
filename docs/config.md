@@ -62,6 +62,24 @@ filetype plugin indent on
 autocmd BufWritePost $MYVIMRC source $MYVIMRC
 ```
 
+## .condarc
+
+```vim
+show_channel_urls: true
+
+ssl_verify: false
+proxy_servers:
+  http: http://127.0.0.1:10032
+  https: http://127.0.0.1:10032
+```
+
+## pip.conf
+
+```vim
+[global]
+index-url = https://mirrors.ivolces.com/pypi/simple/
+```
+
 ## bashrc
 
 ```vim
