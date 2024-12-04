@@ -33,3 +33,19 @@ cmdclass={"build_ext": torch.utils.cpp_extension.BuildExtension.with_options(use
 ```python
 extra_compile_args = {"cxx": ['-O3', '-Wall', '-shared', '-std=c++17', '-fPIC', '-fopenmp']}
 ```
+
+## imageio
+
+报错信息：
+
+```vim
+TypeError: write_frames() got an unexpected keyword argument 'audio_path'
+```
+
+解决办法：
+
+没有安装 imageio_ffmpeg 或者其版本过低（接近0.4.2），升级即可。
+
+```shell
+pip install -U imageio_ffmpeg
+```
