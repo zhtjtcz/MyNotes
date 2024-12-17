@@ -88,3 +88,10 @@ huggingface-cli download --resume-download bigscience/bloom-560m --local-dir blo
 ```
 
 加上`--local-dir-use-symlinks False` 会不使用链接，直接下载到指定目录。
+
+数据集下载：
+
+```shell
+git lfs install
+git clone git@hf.co:datasets/<dataset ID> # example: git clone git@hf.co:datasets/allenai/c4
+```
